@@ -1,0 +1,69 @@
+{
+  "root": true,
+  "extends": [
+    "plugin:vue/recommended",
+    "plugin:vue/strongly-recommended"
+  ],
+  "env": {
+    "node": true,
+    "browser": true,
+    "es6": true
+  },
+  "rules": {
+    // base
+    "object-curly-spacing": [2, "always"],
+    "arrow-parens": [1, "always"],
+
+    // warn about using console or debugger
+    "no-console": 1,
+    "no-debugger": 1,
+
+    // raise errors on long lines
+    "max-len": [2, {
+      "code": 120,
+      "ignoreComments": false,
+      "ignoreTrailingComments": false,
+      "ignoreUrls": false,
+      "ignoreStrings": false,
+      "ignoreTemplateLiterals": false,
+      "ignoreRegExpLiterals": false
+    }],
+
+    // use new syntax
+    "prefer-arrow-callback": 2,
+    "generator-star-spacing": [2, "after"],
+
+    "func-style": [2, "declaration", {
+      "allowArrowFunctions": true
+    }],
+    "no-var": 2,
+    "semi": [2, "never"],
+    "prefer-const": ["error", {
+      "destructuring": "any",
+      "ignoreReadBeforeAssign": false
+    }],
+
+    // jsx
+    "jsx-quotes": ["error", "prefer-single"],
+
+    // rules for vue components
+    "vue/html-closing-bracket-newline": ["error", {
+      "singleline": "never",
+      "multiline": "always"
+    }],
+    "vue/html-closing-bracket-spacing": ["error", {
+      "startTag": "never",
+      "endTag": "never",
+      "selfClosingTag": "always"
+    }],
+    "vue/max-attributes-per-line": ["error", {
+      "singleline": 2,
+      "multiline": {
+        "max": 1,
+        "allowFirstLine": false
+      }
+    }],
+    "vue/prop-name-casing": ["error", "camelCase"],
+    "vue/script-indent": ["error", 2, { "baseIndent": 1 }]
+  }
+}
