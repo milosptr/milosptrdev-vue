@@ -63,7 +63,7 @@
           @click="scrollToSection(nav.name)"
         >
           <img
-            :src="`/assets/icons/${nav.name}.svg`"
+            :src="`/assets/icons/${nav.name.toLowerCase()}.svg`"
             width="24"
             height="24"
             :alt="nav.name"
