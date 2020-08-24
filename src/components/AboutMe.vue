@@ -58,6 +58,7 @@
           href="/assets/PetrovicMilosCV-23-8-2020.pdf"
           class="btn px-8 py-2 bg-primary rounded-full
           shadow-lg hover:shadow-none flex items-center justify-center w-32 m-auto"
+          rel="noreferrer"
           download
         >
           <div class="btn text-xs uppercase font-extrabold tracking-wider">

@@ -17,6 +17,7 @@
           :href="visit"
           target="_blank"
           class="mr-3 w-24 flex justify-center items-center bg-primary py-2 rounded-full"
+          rel="noreferrer"
         >
           <img
             src="/assets/icons/link.svg"
@@ -33,6 +34,7 @@
           target="_blank"
           class="flex justify-center items-center w-32 justify-center py-2
           border border-solid border-black rounded-full"
+          rel="noreferrer"
         >
           <img
             src="/assets/icons/github.svg"

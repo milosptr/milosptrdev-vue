@@ -7,7 +7,11 @@
       If you want to <strong>talk</strong>, you can <strong>find me</strong> at
     </p>
     <div class="mt-16">
-      <a href="mailto:milosptr@hotmail.com" class="font-bold text-xl tracking-wide">
+      <a
+        href="mailto:milosptr@hotmail.com"
+        class="font-bold text-xl tracking-wide"
+        rel="noreferrer"
+      >
         milosptr@hotmail.com
       </a>
     </div>
@@ -17,6 +21,7 @@
           href="https://www.linkedin.com/in/petrovic-milos/"
           class="flex justify-center items-center w-12 h-12 border-none border-solid border-black rounded-full"
           target="_blank"
+          rel="noreferrer"
         >
           <img
             src="/assets/icons/linkedin.svg"
@@ -29,6 +34,7 @@
           href="https://github.com/milosptr"
           class="flex justify-center items-center w-12 h-12 border-none border-solid border-black rounded-full"
           target="_blank"
+          rel="noreferrer"
         >
           <img
             src="/assets/icons/github.svg"
@@ -41,6 +47,7 @@
           href="https://www.instagram.com/somizmatika/"
           class="flex justify-center items-center w-12 h-12 border-none border-solid border-black rounded-full"
           target="_blank"
+          rel="noreferrer"
         >
           <img
             src="/assets/icons/instagram.svg"
@@ -53,6 +60,7 @@
           href="https://www.facebook.com/shomyp"
           class="flex justify-center items-center w-12 h-12 border-none border-solid border-black rounded-full"
           target="_blank"
+          rel="noreferrer"
         >
           <img
             src="/assets/icons/facebook.svg"
