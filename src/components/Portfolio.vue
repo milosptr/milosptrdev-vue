@@ -13,11 +13,11 @@
           Ultimate Movers Software
         </template>
         <template v-slot:image>
-          <img
+          <v-lazy-image
             src="/assets/portfolio/ultimatemovers.png"
+            src-placeholder="/assets/img/placeholder.jpg"
             alt="ultimatemovers"
-            width="100%"
-          >
+          />
         </template>
         <template v-slot:description>
           <p>
@@ -45,11 +45,11 @@
           The Faculty of Media and Communications
         </template>
         <template v-slot:image>
-          <img
+          <v-lazy-image
             src="/assets/portfolio/fmk.png"
+            src-placeholder="/assets/img/placeholder.jpg"
             alt="fmk"
-            width="100%"
-          >
+          />
         </template>
         <template v-slot:description>
           <p>
@@ -73,11 +73,11 @@
           East Serbian News (Istocne VESTI)
         </template>
         <template v-slot:image>
-          <img
+          <v-lazy-image
             src="/assets/portfolio/istocnevesti.png"
-            alt="fmk"
-            width="100%"
-          >
+            src-placeholder="/assets/img/placeholder.jpg"
+            alt="istocnevesti"
+          />
         </template>
         <template v-slot:description>
           <p>
@@ -105,11 +105,11 @@
           Jungo Digital Solutions
         </template>
         <template v-slot:image>
-          <img
+          <v-lazy-image
             src="/assets/portfolio/jungo.png"
+            src-placeholder="/assets/img/placeholder.jpg"
             alt="jungo"
-            width="100%"
-          >
+          />
         </template>
         <template v-slot:description>
           <p>
@@ -135,11 +135,11 @@
           MarWear Canada
         </template>
         <template v-slot:image>
-          <img
+          <v-lazy-image
             src="/assets/portfolio/marwearca.png"
+            src-placeholder="/assets/img/placeholder.jpg"
             alt="marwear"
-            width="100%"
-          >
+          />
         </template>
         <template v-slot:description>
           <p>
@@ -165,11 +165,11 @@
           Najletovi
         </template>
         <template v-slot:image>
-          <img
+          <v-lazy-image
             src="/assets/portfolio/najletovi.png"
-            alt="fmk"
-            width="100%"
-          >
+            src-placeholder="/assets/img/placeholder.jpg"
+            alt="najletovi"
+          />
         </template>
         <template v-slot:description>
           <p>
@@ -198,11 +198,11 @@
           Find My Beer App
         </template>
         <template v-slot:image>
-          <img
+          <v-lazy-image
             src="/assets/portfolio/findMyBeerApp.png"
+            src-placeholder="/assets/img/placeholder.jpg"
             alt="findMyBeerApp"
-            width="100%"
-          >
+          />
         </template>
         <template v-slot:description>
           <p>
@@ -233,11 +233,11 @@
           One Click Travel
         </template>
         <template v-slot:image>
-          <img
+          <v-lazy-image
             src="/assets/portfolio/octra.png"
+            src-placeholder="/assets/img/placeholder.jpg"
             alt="octra"
-            width="100%"
-          >
+          />
         </template>
         <template v-slot:description>
           <p>
@@ -263,11 +263,11 @@
           Alphabet Reflex Game
         </template>
         <template v-slot:image>
-          <img
+          <v-lazy-image
             src="/assets/portfolio/letter-game.png"
+            src-placeholder="/assets/img/placeholder.jpg"
             alt="letter-game"
-            width="100%"
-          >
+          />
         </template>
         <template v-slot:description>
           <p>
