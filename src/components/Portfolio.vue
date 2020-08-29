@@ -35,6 +35,18 @@
               LARAVEL & VUEJS & SQL
             </span>
           </p>
+          <p>
+            <span class="text-xs font-extrabold tracking-wide">
+              DESIGN:
+              <a
+                href="http://stefanjeremic.com/"
+                target="_blank"
+                class="text-xs tracking-wide"
+              >
+                Stefan Jeremić
+              </a>
+            </span>
+          </p>
         </template>
       </PortfolioItem>
       <PortfolioItem
@@ -254,11 +266,6 @@
           <p>
             <span class="text-xs font-extrabold tracking-wide">
               LARAVEL & REACTJS
-            </span>
-          </p>
-          <p>
-            <span class="text-xs font-extrabold tracking-wide">
-              DESIGN: <a href="http://stefanjeremic.com/" target="_blank">Stefan Jeremić</a>
             </span>
           </p>
         </template>
