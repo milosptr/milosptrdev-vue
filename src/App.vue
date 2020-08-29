@@ -13,9 +13,9 @@
       Navigation
     },
     mounted() {
-      this.axios.get('https://extreme-ip-lookup.com/json/')
+      this.axios.get('https://ipapi.co/json/')
         .then((res) => {
-          console.log(res.country)
+          console.log(res, res.data, res.response)
         })
     }
   }
