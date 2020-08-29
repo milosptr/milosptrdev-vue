@@ -12,6 +12,12 @@
     components: {
       Navigation
     },
+    mounted() {
+      this.axios.get('https://extreme-ip-lookup.com/json/')
+        .then((res) => {
+          console.log(res.country)
+        })
+    }
   }
 </script>
 
