@@ -256,6 +256,11 @@
               LARAVEL & REACTJS
             </span>
           </p>
+          <p>
+            <span class="text-xs font-extrabold tracking-wide">
+              DESIGN: <a href="http://stefanjeremic.com/" target="_blank">Stefan Jeremić</a>
+            </span>
+          </p>
         </template>
       </PortfolioItem>
       <PortfolioItem source="https://github.com/milosptr/alphabet-reflex-game">
