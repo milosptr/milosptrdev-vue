@@ -41,7 +41,7 @@
               <a
                 href="http://stefanjeremic.com/"
                 target="_blank"
-                class="text-xs tracking-wide"
+                class="text-xs tracking-wide uppercase"
               >
                 Stefan Jeremić
               </a>
