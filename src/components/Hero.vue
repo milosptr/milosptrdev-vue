@@ -2,7 +2,7 @@
   <section id="home" class="container m-auto h-screen py-20 overflow-hidden">
     <div class="flex flex-wrap justify-center items-start lg:items-center h-screen px-4 sm:px-8 ">
       <div class="w-full lg:w-1/2 text-center sm:text-left">
-        <p class="text-6xl">
+        <p class="text-5xl lg:text-6xl">
           {{ getTranslation.helloFirstLine }}
         </p>
         <p
