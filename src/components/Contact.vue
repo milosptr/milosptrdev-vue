@@ -1,11 +1,11 @@
 <template>
   <section id="contact" class="container m-auto py-10 lg:py-20 text-center">
     <h2 class="font-bold uppercase text-center text-3xl text-primary">
-      Contact
+      {{ getTranslation.contactTitle }}
     </h2>
-    <p>
-      If you want to <strong>talk</strong>, you can <strong>find me</strong> at
-    </p>
+    <p
+      v-html="getTranslation.contactSubtitle"
+    />
     <div class="mt-16">
       <a
         href="mailto:milosptr@hotmail.com"
@@ -78,9 +78,11 @@
 </template>
 
 <script>
+  import { mapGetters } from 'vuex'
   export default {
     name: 'Contact',
     computed: {
+      ...mapGetters(['getTranslation']),
       getYear() {
         return new Date().getFullYear()
       }

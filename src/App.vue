@@ -6,6 +6,7 @@
 </template>
 
 <script>
+  import { mapMutations } from 'vuex'
   import Navigation from './components/Navigation'
 
   export default {
@@ -15,8 +16,14 @@
     mounted() {
       this.axios.get('https://ipapi.co/json/')
         .then((res) => {
-          console.log(res, res.data, res.response)
+          if(res.data) {
+            const country = res.data.country_code || res.data.country
+            this.setTranslation(country)
+          }
         })
+    },
+    methods: {
+      ...mapMutations(['setTranslation'])
     }
   }
 </script>

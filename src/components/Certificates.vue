@@ -1,11 +1,12 @@
 <template>
   <section id="experience" class="container m-auto py-10 lg:py-20 lg:text-center">
     <h2 class="font-bold uppercase text-center text-3xl text-primary">
-      Certificates
+      {{ getTranslation.certificatesTitle }}
     </h2>
-    <p class="text-center">
-      Some <strong>certificates</strong> from <strong>Udemy</strong> courses
-    </p>
+    <p
+      class="text-center"
+      v-html="getTranslation.certificatesSubtitle"
+    />
 
     <div class="mt-10 flex flex-wrap items-center px-4 sm:px-8">
       <div
@@ -35,6 +36,8 @@
 </template>
 
 <script>
+  import { mapGetters } from 'vuex'
+
   export default {
     name: 'Certificates',
     data: () => ({
@@ -43,7 +46,10 @@
         { id: 1, name: 'NPM Mastery: Learn how to work with NPM like a Professional', issued: 'Aug 2020 - Udemy' },
         { id: 2, name: 'SQL for Data Analysis: Weekender Crash Course', issued: 'Aug 2020 - Udemy' },
       ]
-    })
+    }),
+    computed: {
+      ...mapGetters(['getTranslation'])
+    }
   }
 </script>
 

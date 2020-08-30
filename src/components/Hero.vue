@@ -3,26 +3,31 @@
     <div class="flex flex-wrap justify-center items-start lg:items-center h-screen px-4 sm:px-8 ">
       <div class="w-full lg:w-1/2 text-center sm:text-left">
         <p class="text-6xl">
-          Hello ✌,
+          {{ getTranslation.helloFirstLine }}
         </p>
-        <p class="text-6xl">
-          I'm
-          <span class="text-6xl font-semibold text-primary">
-            Miloš
-          </span>
-        </p>
+        <p
+          class="text-6xl"
+          v-html="getTranslation.helloSecondLine"
+        />
         <div class="mt-2 flex justify-center sm:justify-start">
-          A
+          {{ getLanguage == 'DE' ? 'Ein ' : 'A ' }}
           <div
             class="font-semibold mx-1"
-            v-text="activeText"
+            v-text="getTranslation.heroAboutAttributesActiveText"
           />
           Full Stack Web Developer
         </div>
       </div>
-      <div class="hidden sm:block sm:w-full lg:w-1/2">
+      <div class="sm:block sm:w-full lg:w-1/2">
         <img
-          :src="heroPersonImage"
+          v-show="getNightMode"
+          src="/assets/img/milos-petrovic-dark.png"
+          alt="milos-petrovic"
+          class="hero-person"
+        >
+        <img
+          v-show="!getNightMode"
+          src="/assets/img/milos-petrovic.png"
           alt="milos-petrovic"
           class="hero-person"
         >
@@ -34,7 +39,7 @@
     >
       <div class="mouse-wrap w-full">
         <div class="mouse" />
-        <p>Scroll Down</p>
+        <p>{{ getTranslation.scrollDownText }}</p>
       </div>
     </div>
     <!--  eslint-disable  -->
@@ -59,16 +64,11 @@
   export default {
     name: 'Hero',
     data: () => ({
-      aboutText: [
-        'committed',
-        'self-taught',
-        'passionate',
-      ],
-      activeText: 'committed',
+      activeText: '',
       activeTextClass: 'transition-0'
     }),
     computed: {
-      ...mapGetters(['getNightMode']),
+      ...mapGetters(['getNightMode', 'getTranslation', 'getLanguage']),
       heroPersonImage() {
         if(this.getNightMode)
           return '/assets/img/milos-petrovic-dark.png'
@@ -85,8 +85,11 @@
     methods: {
       rollingText() {
         window.setInterval(() => {
-          const index = this.aboutText.indexOf(this.activeText)
-          this.activeText = index + 1 >= this.aboutText.length ? this.aboutText[0] : this.aboutText[index + 1]
+          const index =
+            this.getTranslation.heroAboutAttributesText.indexOf(this.getTranslation.heroAboutAttributesActiveText)
+          this.getTranslation.heroAboutAttributesActiveText =
+            index + 1 >= this.getTranslation.heroAboutAttributesText.length ?
+              this.getTranslation.heroAboutAttributesText[0] : this.getTranslation.heroAboutAttributesText[index + 1]
         }, 2400)
       },
       scrollDown() {
@@ -105,6 +108,19 @@
     top: 0;
     right: 0;
     width: 50%;
+  }
+
+  @media (max-width: 768px) {
+    .h-screen {
+      height: 800px;
+    }
+    .hero-person {
+      top: 350px;
+      width: 100%;
+    }
+    .mouse-wrap {
+      display: none;
+    }
   }
 
 </style>

@@ -251,7 +251,7 @@ img.shape9 {
     border-style: solid;
     position: absolute;
     margin: 5px;
-    border-color: black;
+    border-color: #333;
     z-index: 1;
 }
 
@@ -337,6 +337,31 @@ img.shape9 {
     visibility: visible;
     opacity: 1;
     transition: opacity .15s;
+}
+
+.open-navigation {
+    right: -100vw;
+    -webkit-animation: navigation .7s forwards;
+    -o-animation: navigation .7s forwards;
+    animation: navigation .7s forwards;
+}
+
+@-webkit-keyframes navigation {
+    0% {
+        right: -100vw;
+    }
+    100% {
+        right: 0;
+    }
+}
+
+@keyframes navigation {
+    0% {
+        right: -100vw;
+    }
+    100% {
+        right: 0;
+    }
 }
 
 @media (max-width: 768px) {

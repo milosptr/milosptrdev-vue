@@ -25,7 +25,7 @@
             width="16"
           >
           <div class="text-xs font-bold uppercase text-white tracking-wide ml-2">
-            Visit
+            {{ getTranslation.portfolioVisitButton }}
           </div>
         </a>
         <a
@@ -42,7 +42,7 @@
             width="16"
           >
           <div class="text-xs font-bold uppercase tracking-wide ml-2 ">
-            Source
+            {{ getTranslation.portfolioSourceButton }}
           </div>
         </a>
       </div>
@@ -51,6 +51,7 @@
 </template>
 
 <script>
+  import { mapGetters } from 'vuex'
   export default {
     name: 'PortfolioItem',
     props: {
@@ -66,12 +67,15 @@
         type: String,
         default: () => ''
       },
+    },
+    computed: {
+      ...mapGetters(['getTranslation']),
     }
   }
 </script>
 
 <style scoped>
-  p {
+  /deep/ p {
     margin-bottom: 16px;
     font-size: 16px;
   }

@@ -64,6 +64,7 @@
       }
     }],
     "vue/prop-name-casing": ["error", "camelCase"],
-    "vue/script-indent": ["error", 2, { "baseIndent": 1 }]
+    "vue/script-indent": ["error", 2, { "baseIndent": 1 }],
+    "vue/no-v-html": 0
   }
 }
