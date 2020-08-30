@@ -2,20 +2,20 @@
   <section id="home" class="container m-auto h-screen py-20 overflow-hidden">
     <div class="flex flex-wrap justify-center items-start lg:items-center h-screen px-4 sm:px-8 ">
       <div class="w-full lg:w-1/2 text-center sm:text-left">
-        <p class="text-5xl lg:text-6xl">
+        <p class="text-4xl lg:text-6xl">
           {{ getTranslation.helloFirstLine }}
         </p>
         <p
-          class="text-5xl lg:text-6xl"
+          class="text-4xl lg:text-6xl"
           v-html="getTranslation.helloSecondLine"
         />
-        <div class="mt-2 flex justify-center sm:justify-start">
+        <div class="mt-2 text-sm flex justify-center sm:justify-start">
           {{ getLanguage == 'DE' ? 'Ein ' : 'A ' }}
           <div
             class="font-semibold mx-1"
             v-text="getTranslation.heroAboutAttributesActiveText"
           />
-          Full Stack Web Developer
+          {{ getLanguage == 'DE' ? 'Full Stack-Entwickler' : 'Full Stack Web Developer' }}
         </div>
       </div>
       <div class="sm:block sm:w-full lg:w-1/2">
