@@ -6,7 +6,7 @@
           {{ getTranslation.helloFirstLine }}
         </p>
         <p
-          class="text-6xl"
+          class="text-5xl lg:text-6xl"
           v-html="getTranslation.helloSecondLine"
         />
         <div class="mt-2 flex justify-center sm:justify-start">
