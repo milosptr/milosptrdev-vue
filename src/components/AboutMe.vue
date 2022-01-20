@@ -48,7 +48,7 @@
       <div class="mt-10">
         <a
           v-tooltip="getTranslation.aboutMeResumeTooltip"
-          href="/assets/PetrovicMilosCV-12-01-2022.pdf"
+          href="/PetrovicMilosCV-12-01-2022.pdf"
           class="btn px-8 py-2 bg-primary rounded-full
           shadow-lg hover:shadow-none flex items-center justify-center w-32 m-auto"
           rel="noreferrer"
